@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Портфолио</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href=""  class="active" style="--navAni:1">Башкы бет</a></li>
+                <li><a href="s.png" style="--navAni:2">Мен жөнүндө</a></li>
+                <li><a href="r.png" style="--navAni:3">Резюме</a></li>
+                <li><a href="mailto:kurmanbekmamadumarov35@gmail.com" style="--navAni:4">Электрондук почта</a></li>
+                <li><a href="tel:+996508735999" style="--navAni:5">Контакт</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Салам, бул мен</h3>
+                <h1><span style="color:#f9532d;">Мамадумаров Курманбек</span></h1>
+                <p>Пи(б)-1-22 тайпасынын студенти</p>
+                <div class="social">
+                    <a href="https://t.me/Jvyvb" style="--socialAni:1"><i class='bx bxl-telegram'></i></a>
+                    <a href="https://instagram.com/kurmanbek.mk?igshid=OGQ5ZDc2ODk2ZA==" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/qr/DFVDQFZ7P6IIH1" style="--socialAni:3"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100071181674885&mibextid=ZbWKwL" style="--socialAni:4"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+            </div>
+            <div class="img-sec">
+                <div class="images">
+                    <img src="5.png" alt="" class="img-w">
+                        <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>
